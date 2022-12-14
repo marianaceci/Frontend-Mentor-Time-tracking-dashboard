@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/time-tracking-dashboard-b2ct-rhDm2](https://www.frontendmentor.io/solutions/time-tracking-dashboard-b2ct-rhDm2)
+- Live Site URL: [https://frontend-mentor-time-tracking-dashboard-sigma.vercel.app/](https://frontend-mentor-time-tracking-dashboard-sigma.vercel.app/)
 
 ## My process
 
