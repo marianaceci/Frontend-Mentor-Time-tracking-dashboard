@@ -85,9 +85,9 @@ export default function ProfileCard(props) {
                     </ProfileName>
                 </ProfileTop>
                 <ProfileBottom>
-                    <Button 
-                        handleClick={props.handleOption} 
-                    />
+                    <Button handleClick={props.handleOption} value={'Daily'} />
+                    <Button handleClick={props.handleOption} value={'Weekly'} />
+                    <Button handleClick={props.handleOption} value={'Monthly'} />
                 </ProfileBottom>
             </ProfileContainer>           
         </>

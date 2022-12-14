@@ -20,9 +20,7 @@ const ButtonStyle = styled.button`
 export default function Button(props) {    
     return (
         <>
-            <ButtonStyle type="button" onClick={props.handleClick}>Daily</ButtonStyle>     
-            <ButtonStyle type="button" onClick={props.handleClick}>Weekly</ButtonStyle>     
-            <ButtonStyle type="button" onClick={props.handleClick}>Monthly</ButtonStyle>     
+            <ButtonStyle type="button" onClick={props.handleClick}>{props.value}</ButtonStyle>     
         </>
     )
 }
