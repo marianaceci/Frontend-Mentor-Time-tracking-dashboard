@@ -95,20 +95,20 @@ export default function Cards() {
     const handleSelectOption = (e) => { 
         
         let clicked = e.target.innerText;
-        setCurrent(prevCurrent => {
-            return clicked == "Daily" ? prevCurrent = infos.map((info) => info.timeframes.daily.current)
-                : clicked == "Weekly" ? prevCurrent = infos.map((info) => info.timeframes.weekly.current)
-                : prevCurrent = infos.map((info) => info.timeframes.monthly.current)
+        setCurrent(current => {
+            return clicked == "Daily" ? current = infos.map((info) => info.timeframes.daily.current)
+                : clicked == "Weekly" ? current = infos.map((info) => info.timeframes.weekly.current)
+                : current = infos.map((info) => info.timeframes.monthly.current)
         })
-        setPrevious(prevPrevious => {
-            return clicked == "Daily" ? prevPrevious = infos.map((info) => info.timeframes.daily.previous)
-                : clicked == "Weekly" ? prevPrevious = infos.map((info) => info.timeframes.weekly.previous)
-                : prevPrevious = infos.map((info) => info.timeframes.monthly.previous)
+        setPrevious(previous => {
+            return clicked == "Daily" ? previous = infos.map((info) => info.timeframes.daily.previous)
+                : clicked == "Weekly" ? previous = infos.map((info) => info.timeframes.weekly.previous)
+                : previous = infos.map((info) => info.timeframes.monthly.previous)
         })
-        setText(prevText => {
-            return clicked == "Daily" ? prevText = 'Yesterday'
-                : clicked == "Weekly" ? prevText = 'Last week'
-                : prevText = 'Last month'
+        setText(text => {
+            return clicked == "Daily" ? text = 'Yesterday'
+                : clicked == "Weekly" ? text = 'Last week'
+                : text = 'Last month'
         })
 
         let arrayText = []
